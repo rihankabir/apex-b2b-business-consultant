@@ -22,12 +22,17 @@ padding-right: 15px;
     
 }
 .hero{
-    height: 90vh;
+    height: 113vh;
     background-image: url("../images/hero image bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 100%;
+    width: 100%;
+}
+.new{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 
