@@ -22,9 +22,9 @@ padding-right: 15px;
     
 }
 .hero{
-    height: 100vh;
-    background-image: url("../images/hero background banner.png");
-     background-size: cover;
+    height: 90vh;
+    background-image: url("../images/hero image bg.png");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 100%;
