@@ -21,6 +21,17 @@ padding-right: 15px;
     border-radius: 34px;
     
 }
+.hero{
+    height: 100vh;
+    background-image: url("../images/hero background banner.png");
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100%;
+}
+
+
+
 
 /* Small Mobile */
 @media (max-width: 576px) {
