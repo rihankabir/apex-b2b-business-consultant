@@ -22,13 +22,14 @@ padding-right: 15px;
     
 }
 .hero{
-    height: 113vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url("../images/hero image bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 100%;
-    width: 100%;
+    height: 110vh;
 }
 .new{
     padding-top: 100px;
@@ -92,7 +93,10 @@ padding-right: 15px;
         text-align: center;
         margin-top: 20px;
     }
+.hero{
+    height: 80vh !important;
 
+}
 }
 @media (max-width: 1200px) {
 
