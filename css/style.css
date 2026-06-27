@@ -51,8 +51,8 @@ padding-right: 15px;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-    line-height: 100%;
     font-size: 22px;
+    line-height: 150%;
 }
 .text-div{
     max-width:866px;
@@ -64,6 +64,15 @@ padding-right: 15px;
     margin: auto;
     text-align: center;
 }
+.submitbtn{
+    padding: 10px 30px;
+    border-radius: 34px;
+    background-color: #D4AF37;
+    width: 362px;
+    height: 50px;
+}
+
+
 
 /* Small Mobile */
 @media (max-width: 576px) {
@@ -178,5 +187,9 @@ padding-right: 15px;
     .heropt {
         max-width: 659px;
     }
-
+.submitbtn {
+   
+    width: 285px;
+    height: 50px;
+}
 }
