@@ -84,6 +84,10 @@ padding-right: 15px;
     .herotxt{
      font-size: 26px !important;
  }
+ .herop {
+        font-size: 14px !important;
+    }
+     
 }
 /* Mobile */
 @media (max-width: 768px) {
@@ -103,10 +107,16 @@ padding-right: 15px;
     .cta-button{
         width: 100%;
     }
-    .herotxt {
-        font-size: 51px;
+    
+   .herotxt {
+        font-size: 48px;
     }
-   
+        .heropt {
+        max-width: 484px !important;
+    }
+        .herop {
+        font-size: 17px;
+    }
 }
 /* Tablet */
 @media (max-width: 992px) {
@@ -158,14 +168,15 @@ padding-right: 15px;
  }
 .herotxt{
 
-    font-size: 67px;
+    font-size: 62px;
 }
 .herop {
  
-    font-size: 19px;
+    font-size: 18px;
 }
-.heropt {
-    max-width: 686px;
 
-}
+    .heropt {
+        max-width: 659px;
+    }
+
 }
