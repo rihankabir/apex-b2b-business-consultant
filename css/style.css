@@ -38,23 +38,24 @@ padding-right: 15px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .herotxt{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-    line-height: 100%;
-    font-size: 93px;
-}
-.herop{
-    font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-    line-height: 100%;
-    font-size: 25px;
+
+    font-size:clamp(70px,5vw,99px);
+
+    font-weight:700;
+
+    line-height:1;
 }
 
+.herop{
+
+    font-size:clamp(16px,1.5vw,20px);
+
+    max-width:620px;
+
+    margin:auto;
+}
 
 /* Small Mobile */
 @media (max-width: 576px) {
