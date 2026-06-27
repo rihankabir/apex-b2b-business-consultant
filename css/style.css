@@ -25,14 +25,15 @@ padding-right: 15px;
     
 }
 .hero{
-    padding-top: 100px;
+    padding-top: 59px;
     padding-bottom: 100px;
     background-image: url("../images/hero image bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 100%;
-    height: 110vh;
+    height: 561px;
+    width: 100%;
 }
 .new{
     padding-top: 100px;
