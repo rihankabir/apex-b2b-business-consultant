@@ -46,7 +46,14 @@ padding-right: 15px;
     line-height: 100%;
     font-size: 93px;
 }
-
+.herop{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+    line-height: 100%;
+    font-size: 25px;
+}
 
 
 /* Small Mobile */
