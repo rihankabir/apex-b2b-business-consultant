@@ -64,9 +64,10 @@
     height: 561px;
     width: 100%;
 }
-.new{
+.brands{
     padding-top: 100px;
     padding-bottom: 100px;
+    background-color: #000;
 }
 .herotxt{
   font-family: "Montserrat", sans-serif;
