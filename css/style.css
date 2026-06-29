@@ -135,6 +135,7 @@
 .submitbtn:hover {
     color: white;
 }
+
 .about{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -142,11 +143,25 @@
     opacity:100%;
 }
 .about-bg{
+    position: relative;
     background-image: url("../images/about.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 100%;
+     aspect-ratio: 919 / 663;
+}
+.about-bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to right,
+        rgba(0,0,0,.10),
+        rgba(0,0,0,.55),
+        #2D2D2D
+    );
 }
 
 .about-txt{
