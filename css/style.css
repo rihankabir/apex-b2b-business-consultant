@@ -141,6 +141,14 @@
     background-color: #2D2D2D;
     opacity:100%;
 }
+.about-bg{
+    background-image: url("../images/about.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100%;
+}
+
 .about-txt{
     font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
