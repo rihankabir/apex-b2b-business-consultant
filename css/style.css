@@ -143,7 +143,13 @@
     opacity:100%;
 
 }
-
+.about-divider{
+    width: 1619px;
+    max-width: 90%;
+    height: 1px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 auto;
+}
 
 .about-bg{
     position: relative;
