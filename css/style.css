@@ -228,6 +228,12 @@
     margin:auto;
     text-align:start;
 }
+.founder-para-new{
+     max-width:715px;
+     height: 115px;
+    margin:auto;
+    text-align:start;
+}
 
 .founder-para strong{
     color:#fff;
