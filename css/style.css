@@ -135,6 +135,17 @@
 .submitbtn:hover {
     color: white;
 }
+.about{
+    background-color: #2D2D2D;
+}
+.about-txt{
+    color: #FFD700;
+}
+.about-box{
+    display: flex;
+    justify-content: start;
+    
+}
 
 
 /* Small Mobile */
