@@ -148,8 +148,13 @@
 }
 .about-box{
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     
+}
+.about p{
+    color: #fff;
 }
 
 
