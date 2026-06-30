@@ -212,7 +212,7 @@
 }
 
 .underabout{
-    background-color: black;
+    background-color: #2D2D2D;
 }
 .founder-para{
     font-family:"Montserrat",sans-serif;
@@ -325,6 +325,27 @@
     font-family:"Montserrat",sans-serif;
     font-size:19px;
     font-weight: 800;
+}
+.standbg{
+       position: relative;
+    background-image: url("../images/stand img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100%;
+     aspect-ratio: 946 / 693;
+}
+.standbg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to left,
+        rgba(0,0,0,.10),
+        rgba(0,0,0,.55),
+        #2D2D2D
+    );
 }
 
 
