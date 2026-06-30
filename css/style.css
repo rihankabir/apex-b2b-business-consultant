@@ -244,6 +244,7 @@
 .founder-para strong{
     color:#fff;
     font-weight:600;
+    font-size: 17px;
 }
 
 .founder-heading{
@@ -253,6 +254,7 @@
     line-height: 150%;
     color:#fff;
     margin-bottom:19px;
+    margin-top: 52px;
 }
 
 .founder-list{
@@ -264,7 +266,7 @@
 .founder-list li{
     position:relative;
     padding-left:35px;
-    margin-bottom:28px;
+    margin-bottom:38px;
     color:#d6d6d6;
     font-family:"Montserrat",sans-serif;
     font-size:18px;
@@ -322,11 +324,46 @@ margin-top: 20px;
     font-size: 28px;
     text-align: center;
 }
-
+    .founder-heading {
+        font-size: 15px;
+        margin-top: 103px !important;
+    }
+    .founder-list li {
+        position: relative;
+        font-size: 15px !important;
+    }
+    .founder-para strong {
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+    .founder-para {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px !important;
+        font-weight: 400;
+        line-height: 150%;
+    }
 }
 /* Mobile */
 @media (max-width: 768px) {
 
+    .founder-list li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+    .founder-heading {
+    font-size: 15px;
+    margin-top: 74px;
+}
+.founder-para {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    
+}
     .logo{
         width: 120px;
     }
@@ -378,6 +415,12 @@ margin-top: 20px;
 
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .founder-para {
+   
+    font-size: 18px;
+    line-height: 150%;
+    
+}
 .herotxt{
 
     font-size: 56px !important;
