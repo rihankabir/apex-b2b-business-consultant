@@ -283,6 +283,20 @@
     font-size:20px;
     font-weight:700;
 }
+.stand{
+    background-color: #16201b;
+}
+.box{
+    padding: 40px 60px;
+}
+.TXT{
+     font-family:"Montserrat",sans-serif;
+    font-size:50px;
+    font-weight:600;
+    line-height: 120%;
+    color:#fff;
+}
+
 
 /* Small Mobile */
 @media (max-width: 576px) {
