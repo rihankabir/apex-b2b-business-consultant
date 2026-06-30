@@ -216,7 +216,7 @@
 }
 .founder-para{
     font-family:"Montserrat",sans-serif;
-    font-size:19px;
+    font-size:20px;
     font-weight: 400;
     line-height:150%;
     color:#d6d6d6;
@@ -234,6 +234,12 @@
     margin:auto;
     text-align:start;
 }
+.founder-para-end{
+    max-width: 715px;
+    margin:auto;
+    text-align: start;
+    height: 80px;
+}
 
 .founder-para strong{
     color:#fff;
@@ -242,7 +248,7 @@
 
 .founder-heading{
     font-family:"Montserrat",sans-serif;
-    font-size:20px;
+    font-size:18px;
     font-weight:600;
     line-height: 150%;
     color:#fff;
@@ -258,7 +264,7 @@
 .founder-list li{
     position:relative;
     padding-left:35px;
-    margin-bottom:20px;
+    margin-bottom:28px;
     color:#d6d6d6;
     font-family:"Montserrat",sans-serif;
     font-size:18px;
