@@ -353,6 +353,19 @@
 
 /* Small Mobile */
 @media (max-width: 576px) {
+    .TXT {
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    text-align: center;
+}
+.box {
+    padding: 31px 15px;
+}
+.list li {
+    font-size: 15px;
+}
+    
+
  .logo{
     
         max-width: 120px;
@@ -482,6 +495,22 @@ margin-top: 20px;
 
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .TXT {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+}
+.list li {
+    font-size: 16px;
+   
+}
+.listsp {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
     .founder-para {
    
     font-size: 18px;
