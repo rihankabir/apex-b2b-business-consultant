@@ -427,20 +427,19 @@ font-family:"Montserrat",sans-serif;
     margin-top: 45px;
 }
 .clientss{
+    background-color: #121212;
     position: relative;
-    
+    overflow: hidden;
+     
 }
 .clientbg{
-    position: absolute;
-    top: 0;
-    left: -60px;
-    right: 0;
-    aspect-ratio: 946 / 667;
+    aspect-ratio: 919 / 667;
     background-image: url("../images/clientbg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 100%;
+    overflow: hidden;
     
 }
 .clientbg::after{
@@ -455,7 +454,13 @@ font-family:"Montserrat",sans-serif;
         #2D2D2D
     );
 }
-
+.clienttxt{
+     font-family:"Montserrat",sans-serif;
+    font-size:30px;
+    font-weight: 600;
+    line-height:100%;
+    color: #FFD700;
+}
 
 
 
