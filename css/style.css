@@ -365,7 +365,40 @@ font-family:"Montserrat",sans-serif;
     color: #FFFFFF;
     margin-top: 20px;
 }
+.unlist{
+     list-style:none;
+    padding:0;
+    margin:0;
 
+}
+.unlist li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 45px;
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    line-height:150%;
+    margin-top: 20px;
+
+}
+.unlist li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#0F054C;
+    font-size:20px;
+    font-weight:700;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #EED17B;
+}
 
 
 
