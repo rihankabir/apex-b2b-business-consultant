@@ -350,6 +350,12 @@
 .exists{
     background-color: #464646;
 }
+.existstxt{
+font-family:"Montserrat",sans-serif;
+    font-size:50px;
+    font-weight: 700;
+    line-height:120%;
+}
 
 
 
