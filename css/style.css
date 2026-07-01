@@ -428,8 +428,6 @@ font-family:"Montserrat",sans-serif;
 }
 .clientss{
     background-color: #121212;
-    
-    overflow: hidden;
      
 }
 .clientbg{
@@ -440,6 +438,8 @@ font-family:"Montserrat",sans-serif;
     background-repeat: no-repeat;
     opacity: 100%;
     overflow: hidden;
+    width: 100%;
+
     
 }
 .clientbg::after{
@@ -472,9 +472,42 @@ font-family:"Montserrat",sans-serif;
 .clientp1{
        font-family:"Montserrat",sans-serif;
     font-size:20px;
-    font-weight: 700;
+    font-weight: 600;
     line-height:150%;
     color: #FFFFFF;
+}
+.cllist{
+    list-style:none;
+    padding:0;
+    margin:0;
+
+}
+.cllist li{
+     position: relative;
+    margin-bottom: 20px;
+    padding-left: 50px;
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 400;
+    line-height:150%;
+    margin-top: 20px;
+}
+.cllist li::before{
+     content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#0F054C;
+    font-size:20px;
+    font-weight:700;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #EED17B;
 }
 
 
@@ -483,6 +516,29 @@ font-family:"Montserrat",sans-serif;
 /* Small Mobile */
 @media (max-width: 576px) {
 
+    .clientbg {
+        aspect-ratio: 919 / 667 !important;
+    }
+    .clienttxt {
+        margin-top: 20px;
+        text-align: center !important;
+        font-size: 17px !important;
+    }
+
+    .clientp {
+        font-size: 24px !important;
+        text-align: center !important;
+    }
+        .clientp1 {
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .cllist li {
+        position: relative;
+        margin-bottom: 8px;
+        font-size: 13px !important;
+        margin-top: 12px;
+    }
     .htxtp {
     font-size: 16px;
 }
@@ -580,6 +636,29 @@ margin-top: 20px;
 /* Mobile */
 @media (max-width: 768px) {
 
+    .clientbg {
+    aspect-ratio: 688 / 778;
+    
+}
+    
+    .clientp {
+    font-size: 29px;
+}
+.clientp1 {
+    
+    font-size: 15px;
+}
+.cllist li {
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 15px;
+    margin-top: 12px;
+}
+    .clienttxt {
+    font-size: 20px;
+}
+
+
     .founder-list li {
     position: relative;
     padding-left: 35px;
@@ -663,6 +742,26 @@ margin-top: 20px;
 
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .clientbg {
+    aspect-ratio: 789 / 667;
+    
+}
+    .clienttxt {
+    font-family: "Montserrat", sans-serif;
+    font-size: 27px;
+}
+.clientp {
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+}
+.clientp1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+.cllist li {
+    font-size: 16px;
+}
     .TXT {
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
