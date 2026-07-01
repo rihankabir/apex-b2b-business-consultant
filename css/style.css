@@ -426,6 +426,36 @@ font-family:"Montserrat",sans-serif;
     color: #FFFFFF;
     margin-top: 45px;
 }
+.clientss{
+    position: relative;
+    
+}
+.clientbg{
+    position: absolute;
+    top: 0;
+    left: -60px;
+    right: 0;
+    aspect-ratio: 946 / 667;
+    background-image: url("../images/clientbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    
+}
+.clientbg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to right,
+        rgba(0,0,0,.10),
+        rgba(0,0,0,.55),
+        #2D2D2D
+    );
+}
+
 
 
 
