@@ -399,7 +399,13 @@ font-family:"Montserrat",sans-serif;
     height: 35px;
     background-color: #EED17B;
 }
-
+.htxt{
+       font-family:"Montserrat",sans-serif;
+    font-size:19px;
+    font-weight: 600;
+    line-height:150%;
+    color:#FFFFFF;
+}
 
 
 
