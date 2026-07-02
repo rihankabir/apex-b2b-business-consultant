@@ -530,7 +530,7 @@ font-family:"Montserrat",sans-serif;
 }
 .p-box{
     height: 210px;
-    width: 527px;
+    width: 100%;
     background-color: #2D2D2D;
     border-radius: 20px;
     display: flex;
