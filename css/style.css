@@ -528,7 +528,16 @@ font-family:"Montserrat",sans-serif;
     font-weight: 400;
     line-height:150%;
 }
-
+.p-box{
+    height: 210px;
+    width: 527px;
+    background-color: #2D2D2D;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 30px;
+}
 
 
 
