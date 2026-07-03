@@ -546,6 +546,20 @@ font-family:"Montserrat",sans-serif;
         0 8px 20px rgba(255, 255, 255, 0.808),
         0 15px 40px rgba(247, 246, 246, 0.12);
 }
+.pbtxt{
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:50px;
+    font-weight: 800;
+    line-height:120%;
+}
+.pbptx{
+    color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 500;
+    line-height:150%;
+}
 
 
 
