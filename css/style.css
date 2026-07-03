@@ -577,7 +577,7 @@ background-color:#242222;
     line-height:120%;
 }
 .wedtxt{
-    margin-top: 20px;
+    margin-top: 40px;
        color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
     font-size:25px;
@@ -647,6 +647,32 @@ background-color:#242222;
 
 /* Small Mobile */
 @media (max-width: 576px) {
+
+        .dotxt {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 28px !important;
+    }
+        .wedtxt {
+        font-size: 19px !important;
+    }
+        .wertxt {
+        font-size: 15px !important;
+    }
+        .sptxt {
+            text-align: center;
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px !important;
+    }
+    .stxt {
+        text-align: center;
+        margin-top: 10px;
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+    }
     .pbtxt {
         font-size: 23px !important;
     }
@@ -773,6 +799,40 @@ margin-top: 20px;
 /* Mobile */
 @media (max-width: 768px) {
 
+    .dotxt {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+}
+.wedtxt {
+    text-align: center;
+    margin-top: 40px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+.wertxt {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+.stxt {
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+.sptxt {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+.icon-circle {
+    width: 63px;
+    height: 63px;
+}
     .gtext {
     font-size: 17px;
 }
@@ -892,6 +952,22 @@ margin-top: 20px;
 
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .dotxt {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.wertxt {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+.wedtxt {
+    margin-top: 40px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+}
     .gtext {
     font-size: 18px;
 }
