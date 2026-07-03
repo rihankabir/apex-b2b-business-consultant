@@ -560,6 +560,16 @@ font-family:"Montserrat",sans-serif;
     font-weight: 500;
     line-height:150%;
 }
+.we-do{
+    background-image: url("../images/workwe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    padding: 100px 0px;
+background-color:#242222;
+}
+
 
 
 
