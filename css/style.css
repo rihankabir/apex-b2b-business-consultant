@@ -594,7 +594,7 @@ background-color:#242222;
 .service-card{
    
     border-radius: 20px;
-      padding: 30px;
+      padding: 10px 20px;
     background-color: #2D2D2D;
 }
 .service-card-wide{
@@ -617,7 +617,7 @@ background-color:#242222;
 .sptxt{
     color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
-    font-size:18px;
+    font-size:20px;
     font-weight: 400;
     line-height:150%;
 }
