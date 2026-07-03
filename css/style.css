@@ -568,7 +568,12 @@ font-family:"Montserrat",sans-serif;
 
 /* Small Mobile */
 @media (max-width: 576px) {
-
+    .pbtxt {
+        font-size: 23px !important;
+    }
+    .gtext {
+        font-size: 15px !important;
+    }
     .clientbg {
         aspect-ratio: 919 / 667 !important;
     }
@@ -689,6 +694,19 @@ margin-top: 20px;
 /* Mobile */
 @media (max-width: 768px) {
 
+    .gtext {
+    font-size: 17px;
+}
+.gptxt {
+    font-size: 14px;
+
+}
+.pbtxt {
+    font-size: 36px;
+}
+.pbptx {
+    font-size: 15px;
+}
     .clientbg {
     aspect-ratio: 688 / 778;
     
