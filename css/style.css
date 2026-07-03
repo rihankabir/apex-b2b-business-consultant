@@ -647,7 +647,25 @@ background-color:#242222;
 
 /* Small Mobile */
 @media (max-width: 576px) {
-
+.service-card{
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-circle {
+    margin-right: 0px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.service-card-wide {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
         .dotxt {
         text-align: center;
         color: #FFFFFF;
