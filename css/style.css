@@ -795,6 +795,18 @@ margin-top: 20px;
 
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .gtext {
+    font-size: 18px;
+}
+.gptxt {
+    font-size: 14px;
+}
+.pbtxt {
+    font-size: 46px;
+}
+.pbptx {
+    font-size: 17px;
+}
 
     .clientbg {
     aspect-ratio: 789 / 667;
