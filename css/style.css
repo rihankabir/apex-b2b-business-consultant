@@ -537,11 +537,14 @@ font-family:"Montserrat",sans-serif;
     justify-content: center;
     flex-direction: column;
     padding: 20px 30px;
-     transition: all 0.3s ease;
+    transition: all 0.35s ease;
 }
 .p-box:hover{
     background-color: #0F054C;
-     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.15);
+      transform: translateY(-6px);
+    box-shadow:
+        0 8px 20px rgba(255, 255, 255, 0.808),
+        0 15px 40px rgba(247, 246, 246, 0.12);
 }
 
 
