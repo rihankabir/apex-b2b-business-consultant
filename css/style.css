@@ -596,7 +596,16 @@ background-color:#242222;
     border-radius: 20px;
       padding: 10px 20px;
     background-color: #2D2D2D;
+    transition: all .35s ease;
 }
+.service-card:hover{
+    background-color: #0F054C;
+    transform: translateY(-6px);
+    box-shadow:
+        0 8px 20px rgba(255, 255, 255, 0.808),
+        0 15px 40px rgba(247, 246, 246, 0.12);
+}
+
 .service-card-wide{
     background:#2D2D2D;
     border-radius:20px;
@@ -604,20 +613,28 @@ background-color:#242222;
     display:flex;
     align-items:center;
     height:100%;
+     transition: all .35s ease;
+}
+.service-card-wide:hover{
+        background-color: #0F054C;
+    transform: translateY(-6px);
+    box-shadow:
+        0 8px 20px rgba(255, 255, 255, 0.808),
+        0 15px 40px rgba(247, 246, 246, 0.12);
 }
 
 .stxt{
     margin-top: 10px;
     color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
-    font-size:20px;
+    font-size:19px;
     font-weight: 800;
     line-height:100%;
 }
 .sptxt{
     color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
-    font-size:20px;
+    font-size:18px;
     font-weight: 400;
     line-height:150%;
 }
@@ -969,7 +986,16 @@ margin-top: 20px;
 
 
 }
+
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .sptxt {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
+}
     .dotxt {
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
