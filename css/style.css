@@ -591,6 +591,53 @@ background-color:#242222;
     font-weight: 500;
     line-height:150%;
 }
+.service-card{
+   
+    border-radius: 20px;
+      padding: 30px;
+    background-color: #2D2D2D;
+}
+.service-card-wide{
+    background:#2D2D2D;
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    height:100%;
+}
+
+.stxt{
+    margin-top: 10px;
+    color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 800;
+    line-height:100%;
+}
+.sptxt{
+    color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:18px;
+    font-weight: 400;
+    line-height:150%;
+}
+
+.icon-circle{
+    width:71px;
+    height:71px;
+    border-radius:50%;
+    background:#EED17B;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:24px;
+}
+
+.icon-circle img{
+    width:63px;
+    height:48px;
+    object-fit:contain;
+}
 
 
 
@@ -957,3 +1004,4 @@ margin-top: 20px;
         height: 50px;
     }
 }
+
