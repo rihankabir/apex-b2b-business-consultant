@@ -577,10 +577,18 @@ background-color:#242222;
     line-height:120%;
 }
 .wedtxt{
+    margin-top: 20px;
        color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
     font-size:25px;
     font-weight: 600;
+    line-height:150%;
+}
+.wertxt{
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:17px;
+    font-weight: 500;
     line-height:150%;
 }
 
