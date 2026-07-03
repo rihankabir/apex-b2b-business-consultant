@@ -569,6 +569,20 @@ font-family:"Montserrat",sans-serif;
     padding: 100px 0px;
 background-color:#242222;
 }
+.dotxt{
+    color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:50px;
+    font-weight: 800;
+    line-height:120%;
+}
+.wedtxt{
+       color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 600;
+    line-height:150%;
+}
 
 
 
