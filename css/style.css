@@ -661,9 +661,9 @@ background-color:#242222;
 }
 
 .out-box{
-    background:#4b4b4b;
+    background:#494949;
     border-radius:20px;
-    min-height:75px;
+    min-height:90px;
     
 
     display:flex;
@@ -677,7 +677,7 @@ background-color:#242222;
 
 .out-item{
     align-items:flex-start;
-    justify-content: center;
+    
 }
 
 .out-icon{
@@ -726,7 +726,7 @@ background-color:#242222;
 .b-txt{
       color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
-    font-size:20px;
+    font-size:16px;
     font-weight: 400;
     line-height:150%;
 }
@@ -739,6 +739,23 @@ background-color:#242222;
 
 /* Small Mobile */
 @media (max-width: 576px) {
+
+    .out-title {
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 27px !important;
+    }
+        .out-subtitle {
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px !important;
+    }
+    .out-box-title {
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px !important;
+    }
+
 .service-card{
    display: flex;
    flex-direction: column;
@@ -909,6 +926,21 @@ margin-top: 20px;
 /* Mobile */
 @media (max-width: 768px) {
 
+    .out-box-title {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+.out-title {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+}
+.out-subtitle {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
     .dotxt {
     text-align: center;
     color: #FFFFFF;
@@ -1064,6 +1096,26 @@ margin-top: 20px;
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .out-box-title {
+    font-size: 18px;
+}
+.out-title {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+}
+.out-subtitle {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+.b-txt {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
     .sptxt {
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
