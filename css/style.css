@@ -655,6 +655,65 @@ background-color:#242222;
     height:48px;
     object-fit:contain;
 }
+.outcomes{
+    background:#2d2d2d;
+    padding:100px 0;
+}
+
+.out-box{
+    background:#4b4b4b;
+    border-radius:15px;
+    min-height:75px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.out-item{
+    align-items:flex-start;
+}
+
+.out-icon{
+    width:34px;
+    height:34px;
+    min-width:34px;
+
+    border-radius:50%;
+    background:#EED17B;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-right:18px;
+}
+
+.out-icon img{
+    width:14px;
+}
+
+.out-item p{
+    margin-top:4px;
+}
+.out-title{
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:50px;
+    font-weight: 800;
+    line-height:120%;
+}
+.out-subtitle{
+    color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 600;
+    line-height:150%;
+}
 
 
 
