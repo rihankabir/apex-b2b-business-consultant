@@ -662,8 +662,9 @@ background-color:#242222;
 
 .out-box{
     background:#4b4b4b;
-    border-radius:15px;
+    border-radius:20px;
     min-height:75px;
+    
 
     display:flex;
     justify-content:center;
@@ -712,6 +713,20 @@ background-color:#242222;
     font-family:"Montserrat",sans-serif;
     font-size:20px;
     font-weight: 600;
+    line-height:150%;
+}
+.out-box-title{
+    color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:21px;
+    font-weight: 800;
+    line-height:100%;
+}
+.b-txt{
+      color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 400;
     line-height:150%;
 }
 
