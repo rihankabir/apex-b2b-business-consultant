@@ -745,7 +745,11 @@ background-color:#242222;
     padding:100px 0;
 }
 .apex{
-    background-image: url("images/lastbg.png");
+    background-image: url("../images/lastbg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100%;
 }
 
 
