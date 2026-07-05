@@ -753,6 +753,10 @@ background-color:#242222;
 
 /* Small Mobile */
 @media (max-width: 576px) {
+    .typo {
+    background: #EED17A;
+    padding: 20px 0;
+}
 
     .out-title {
         color: #FFFFFF;
