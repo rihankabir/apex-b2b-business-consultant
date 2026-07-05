@@ -730,6 +730,16 @@ background-color:#242222;
     font-weight: 400;
     line-height:150%;
 }
+.out-box{
+    transition: all 0.35s ease;
+}
+.out-box:hover{
+        background-color: #0F054C;
+    transform: translateY(-6px);
+    box-shadow:
+        0 8px 20px rgba(255, 255, 255, 0.808),
+        0 15px 40px rgba(247, 246, 246, 0.12);
+}
 
 
 
