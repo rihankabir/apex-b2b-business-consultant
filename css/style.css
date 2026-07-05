@@ -753,6 +753,26 @@ background-color:#242222;
     position:relative;
     width:100%;
     min-height:690px;
+    overflow: hidden;
+}
+.why-content{
+
+    max-width:470px;
+
+}
+.why-title{
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:50px;
+    font-weight: 800;
+    line-height:120%;
+}
+.why-text{
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:20px;
+    font-weight: 500;
+    line-height:150%;
 }
 
 
