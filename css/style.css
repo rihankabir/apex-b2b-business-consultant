@@ -861,6 +861,8 @@ color: black;
     transform: translateY(-3px);
 }
 .ntitle{
+    margin-top:10px;
+    margin-bottom: 37px;
     color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
     font-size:25px;
