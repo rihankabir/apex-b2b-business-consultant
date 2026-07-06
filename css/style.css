@@ -821,9 +821,10 @@ color: black;
     background-color: #2D2D2D;
 }
 .fp-text{
+    width: 467px;
      color:#FFFFFF;
     font-family:"Montserrat",sans-serif;
-    font-size:14px;
+    font-size:15px;
     font-weight: 400;
     line-height:150%;
 }
