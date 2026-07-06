@@ -827,6 +827,17 @@ color: black;
     font-weight: 400;
     line-height:150%;
 }
+.f-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.f-icon i{
+    font-size: 20px;
+    color: #d6d6d6;
+}
 
 
 
