@@ -820,7 +820,13 @@ color: black;
     padding: 100px 0;
     background-color: #2D2D2D;
 }
-
+.fp-text{
+     color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:15px;
+    font-weight: 400;
+    line-height:150%;
+}
 
 
 
