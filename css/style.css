@@ -859,6 +859,24 @@ color: black;
     color: white;
     transform: translateY(-3px);
 }
+.quick-links{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:70px;
+}
+
+.quick-links a{
+    display:block;
+    color:#bfbfbf;
+    text-decoration:none;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.quick-links a:hover{
+    color:#e3c04d;
+}
 
 
 
