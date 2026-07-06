@@ -856,26 +856,21 @@ color: black;
 
 .f-icon a:hover{
     background-color: #fdfdfd;
-    color: white;
+    color: rgb(204, 180, 180);
     transform: translateY(-3px);
 }
-.quick-links{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    gap:70px;
+.ntitle{
+    color:#FFFFFF;
+    font-family:"Montserrat",sans-serif;
+    font-size:25px;
+    font-weight: 800;
+    line-height:150%;
 }
-
-.quick-links a{
-    display:block;
-    color:#bfbfbf;
-    text-decoration:none;
-    margin-bottom:18px;
-    transition:.3s;
+.neolink{
+    color: #ddd;
 }
-
-.quick-links a:hover{
-    color:#e3c04d;
+.neolink:hover{
+    color: #f5b400;
 }
 
 
