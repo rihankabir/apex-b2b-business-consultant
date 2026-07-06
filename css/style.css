@@ -875,9 +875,81 @@ color: black;
 .neolink:hover{
     color: #f5b400;
 }
+/* Footer Columns */
+.footer-top .col-lg-5{
+    position:relative;
+}
 
+/* First Divider */
+.footer-top .col-lg-5:first-child::after{
+    content:"";
+    position:absolute;
+    right:42px;
+    top:10px;
+    width:1px;
+    height:197px;
+    background:#ffffff;
+}
 
+/* Second Divider */
+.footer-top .col-lg-3{
+    position: relative;
+}
 
+.footer-top .col-lg-3::after{
+    content: "";
+    position: absolute;
+    left: 355px;
+    top: 10px;
+    width: 1px;
+    height: 197px;
+    background: #ffffff;
+}
+.footer-right{
+    padding-left:84px !important;
+}
+
+.contact-box{
+    margin-top:30px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    margin-bottom:24px;
+}
+
+.contact-icon{
+    width:22px;
+    height:22px;
+    flex-shrink:0;
+    margin-top:2px;
+}
+
+.contact-icon img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.contact-text a,
+.contact-text p{
+    color:#BDBDBD;
+    font-size:15px;
+    font-weight:400;
+    line-height:26px;
+    text-decoration:none;
+    margin:0;
+}
+
+.contact-text a:hover{
+    color:#E6C14C;
+}
+
+.address-item{
+    align-items:flex-start;
+}
 
 
 
@@ -885,6 +957,25 @@ color: black;
 
 /* Small Mobile */
 @media (max-width: 576px) {
+
+    .fp-text {
+        /* width: 325px; */
+        color: #FFFFFF;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        width: 0;
+    }
+    .footer-top .col-lg-5:first-child::after {
+    content: "";
+    /* position: absolute; */
+     right: 0px;
+    /* top: 10px; */
+    width: 1px;
+    /* height: 197px; */
+    background: #ffffff;
+}
     .typo {
     background: #EED17A;
     padding: 20px 0;
@@ -1094,6 +1185,20 @@ margin-top: 20px;
 /* Mobile */
 @media (max-width: 768px) {
 
+    .fp-text {
+    width: 325px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.footer-right {
+    padding-left: 0px !important;
+}
+.ltitle{
+    margin-top: 50px;
+}
 .why-title {
     font-size: 40px;
 }
@@ -1272,6 +1377,24 @@ margin-top: 20px;
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .fp-text {
+    width: 344px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.footer-top .col-lg-3::after {
+    content: "";
+    position: absolute;
+    left: 267px;
+    top: 10px;
+    width: 1px;
+    height: 197px;
+    background: #ffffff;
+}
 
     .why-title {
     font-size: 46px;
