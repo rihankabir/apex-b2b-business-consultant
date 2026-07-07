@@ -951,8 +951,12 @@ color: black;
 .address-item{
     align-items:flex-start;
 }
-
-
+.contact-icon{
+    width: 32px;
+    height: 32px;
+    background-color: #EED17B;
+    border-radius: 50%;
+}
 
 
 
