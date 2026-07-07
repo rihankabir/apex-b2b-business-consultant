@@ -822,6 +822,7 @@ color: black;
     background-color: #2D2D2D;
 }
 .bottom-footer{
+    overflow: hidden;
     padding: 30px 0;
      background-color: #2D2D2D;
 }
@@ -973,7 +974,12 @@ color: black;
     background-color: #EED17B;
     border-radius: 50%;
 }
-
+.f-bottom{
+    position:absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
 
 
 /* Small Mobile */
