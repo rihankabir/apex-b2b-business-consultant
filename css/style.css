@@ -53,6 +53,27 @@
 .cta-button:hover {
     color: #fff;
 }
+.navbar .nav-link{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #fff; 
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after{
+    width: 100%;
+}
 .hero{
     padding-top: 58px;
     padding-bottom: 100px;
