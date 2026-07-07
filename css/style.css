@@ -817,9 +817,17 @@ text-decoration: none;
 color: black;
 }
 .footer-top{
+    z-index: 1;
     padding-top: 100px;
     padding-bottom: 20px;
     background-color: #2D2D2D;
+    overflow: hidden;
+}
+.fsecond {
+    position: absolute;
+    top: 203px;
+    right: 0;
+    left: 1267px;
 }
 .bottom-footer{
     overflow: hidden;
@@ -980,6 +988,19 @@ color: black;
     right: 0;
     overflow: hidden;
 }
+.footer-shape{
+    position:absolute;
+    right:0;
+    bottom:0;
+
+    width:420px;      /* adjust according to your png */
+
+    z-index:0;
+
+    pointer-events:none;
+}
+
+
 
 
 /* Small Mobile */
