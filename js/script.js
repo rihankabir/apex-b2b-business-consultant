@@ -19,7 +19,6 @@ document.querySelectorAll(".brand").forEach((logo) => {
 });
 const goTop = document.getElementById("goTop");
 
-// Show button after scrolling 300px
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
         goTop.style.display = "flex";
@@ -28,7 +27,6 @@ window.addEventListener("scroll", () => {
     }
 });
 
-// Scroll smoothly to top
 goTop.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
