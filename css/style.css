@@ -74,6 +74,9 @@
 .navbar .nav-link:hover::after{
     width: 100%;
 }
+.navbar .nav-link.active::after{
+    width: 100%;
+}
 .hero{
     padding-top: 58px;
     padding-bottom: 100px;
