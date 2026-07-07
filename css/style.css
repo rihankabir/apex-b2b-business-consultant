@@ -1616,7 +1616,15 @@ margin-top: 20px;
 
 @media (max-width: 1200px) {
 
-
+.fp-text {
+    max-width: 386px;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
     .logo{
         width: 130px;
     }
@@ -1654,9 +1662,29 @@ margin-top: 20px;
 }
 
 @media (min-width:1400px){
-
+.fp-text {
+    max-width: 448px !important;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
     .footer-right{
         padding-left:84px !important;
     }
 
+}
+@media (min-width:1210px){
+
+.fp-text {
+    max-width: 355px;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
 }
