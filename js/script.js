@@ -33,3 +33,9 @@ goTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+//AOS ANIMATION INI
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
