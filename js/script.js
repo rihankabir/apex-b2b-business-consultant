@@ -39,3 +39,18 @@ goTop.addEventListener("click", () => {
   $(window).on("load", function () {
     $("#preloader").delay(300).fadeOut(500);
 });
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+
+gsap.from(".hero", {
+    scrollTrigger: {
+        trigger: ".hero",
+        start: "top 80%"
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    ease: "power3.out"
+});
