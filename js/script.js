@@ -479,3 +479,75 @@ gsap.to(button,{
 
 
 });
+
+// ==============================
+// CTA MODAL
+// ==============================
+
+
+const modal = document.getElementById("ctaModal");
+
+const closeModal = document.getElementById("closeModal");
+
+
+const ctaButtons = document.querySelectorAll(
+".cta-button, .submitbtn"
+);
+
+
+
+ctaButtons.forEach(button=>{
+
+
+button.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+
+modal.classList.add("active");
+
+
+
+gsap.from(".cta-modal-box",{
+
+scale:.7,
+
+opacity:0,
+
+duration:.5,
+
+ease:"back.out(1.7)"
+
+});
+
+
+});
+
+
+});
+
+
+
+
+
+closeModal.addEventListener("click",()=>{
+
+modal.classList.remove("active");
+
+});
+
+
+
+
+
+modal.addEventListener("click",(e)=>{
+
+
+if(e.target === modal){
+
+modal.classList.remove("active");
+
+}
+
+
+});
