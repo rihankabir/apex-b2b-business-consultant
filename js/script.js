@@ -40,34 +40,45 @@ goTop.addEventListener("click", () => {
     $("#preloader").delay(300).fadeOut(500);
 });
 
+// Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
 
 
-// ===============================
+// =================================
+// PAGE LOAD REFRESH
+// =================================
+
+window.addEventListener("load", () => {
+    ScrollTrigger.refresh();
+});
+
+
+
+// =================================
 // HERO ANIMATION
-// ===============================
+// =================================
 
-let hero = gsap.timeline();
+let heroTimeline = gsap.timeline();
 
-hero
-.from(".navbar",{
+heroTimeline
+.from(".navbar", {
     y:-40,
     autoAlpha:0,
     duration:0.8,
     ease:"power3.out"
 })
-.from(".herotxt",{
+.from(".herotxt", {
     y:40,
     autoAlpha:0,
     duration:0.8,
     ease:"power3.out"
 },"-=0.4")
-.from(".herop",{
+.from(".herop", {
     y:30,
     autoAlpha:0,
     duration:0.7
 },"-=0.4")
-.from(".hero .submitbtn",{
+.from(".hero .submitbtn", {
     scale:0.8,
     autoAlpha:0,
     duration:0.6
@@ -75,54 +86,33 @@ hero
 
 
 
-// ===============================
-// FUNCTION FOR FADE UP
-// ===============================
+// =================================
+// COMMON ANIMATION FUNCTIONS
+// =================================
 
-function fadeUp(selector){
 
-    gsap.utils.toArray(selector).forEach(item=>{
+function fadeUp(elements){
 
-        gsap.from(item,{
-            scrollTrigger:{
-                trigger:item,
-                start:"top 85%",
-                toggleActions:"play none none reverse"
-            },
+    gsap.utils.toArray(elements).forEach(element=>{
 
+        gsap.fromTo(element,
+
+        {
             y:40,
-            autoAlpha:0,
+            autoAlpha:0
+        },
+
+        {
+            y:0,
+            autoAlpha:1,
             duration:0.8,
-            ease:"power3.out"
+            ease:"power3.out",
 
-        });
-
-    });
-
-}
-
-
-
-// ===============================
-// FUNCTION FOR LEFT / RIGHT
-// ===============================
-
-
-function fadeSide(selector,direction){
-
-    gsap.utils.toArray(selector).forEach(item=>{
-
-        gsap.from(item,{
             scrollTrigger:{
-                trigger:item,
-                start:"top 85%",
-                toggleActions:"play none none reverse"
-            },
-
-            x:direction,
-            autoAlpha:0,
-            duration:0.8,
-            ease:"power3.out"
+                trigger:element,
+                start:"top 90%",
+                toggleActions:"play none none none"
+            }
 
         });
 
@@ -132,31 +122,107 @@ function fadeSide(selector,direction){
 
 
 
-// ===============================
-// BRANDS
-// ===============================
 
-gsap.from(".brand",{
+function fadeLeft(elements){
+
+    gsap.utils.toArray(elements).forEach(element=>{
+
+        gsap.fromTo(element,
+
+        {
+            x:-40,
+            autoAlpha:0
+        },
+
+        {
+            x:0,
+            autoAlpha:1,
+            duration:0.8,
+            ease:"power3.out",
+
+            scrollTrigger:{
+                trigger:element,
+                start:"top 90%",
+                toggleActions:"play none none none"
+            }
+
+        });
+
+    });
+
+}
+
+
+
+
+
+function fadeRight(elements){
+
+    gsap.utils.toArray(elements).forEach(element=>{
+
+        gsap.fromTo(element,
+
+        {
+            x:40,
+            autoAlpha:0
+        },
+
+        {
+            x:0,
+            autoAlpha:1,
+            duration:0.8,
+            ease:"power3.out",
+
+            scrollTrigger:{
+                trigger:element,
+                start:"top 90%",
+                toggleActions:"play none none none"
+            }
+
+        });
+
+    });
+
+}
+
+
+
+
+
+// =================================
+// BRAND LOGOS
+// =================================
+
+
+gsap.fromTo(".brand",
+
+{
+    y:30,
+    autoAlpha:0
+},
+
+{
+    y:0,
+    autoAlpha:1,
+    duration:.7,
+    stagger:.15,
 
     scrollTrigger:{
         trigger:".brands",
         start:"top 85%"
-    },
-
-    y:30,
-    autoAlpha:0,
-    stagger:0.12,
-    duration:0.6
+    }
 
 });
 
 
 
-// ===============================
-// ABOUT
-// ===============================
 
-fadeSide(".about-bg",-40);
+// =================================
+// ABOUT
+// =================================
+
+
+fadeLeft(".about-bg");
 
 fadeUp(`
 .about-box,
@@ -167,176 +233,247 @@ fadeUp(`
 
 
 
-// ===============================
+
+// =================================
 // STAND SECTION
-// ===============================
-
-fadeSide(".stand .box",-40);
-fadeSide(".standbg",40);
+// =================================
 
 
+fadeLeft(".stand .box");
 
-// ===============================
-// WHY EXIST
-// ===============================
+fadeRight(".standbg");
 
-fadeSide(".exists .extxt",-40);
-fadeSide(".exists .extxtt",40);
 
-fadeUp(`
+
+
+// =================================
+// WHY WE EXIST
+// =================================
+
+
+fadeUp(".existstxt");
+
+fadeLeft(`
+.extxt,
 .exists .unlist,
-.exists .htxt,
+.exists .htxt
+`);
+
+
+fadeRight(`
+.extxtt,
 .exists .htxtp
 `);
 
 
 
-// ===============================
+
+// =================================
 // CLIENTS
-// ===============================
+// =================================
 
-fadeSide(".clientbg",-40);
 
-fadeSide(`
+fadeLeft(".clientbg");
+
+fadeRight(`
 .clienttxt,
 .clientp,
 .clientp1,
 .cllist
-`,40);
+`);
 
 
 
-// ===============================
-// PROBLEM CARDS
-// ===============================
 
-gsap.from(".p-box",{
+// =================================
+// PROBLEM BOXES
+// =================================
+
+
+gsap.utils.toArray(".p-box").forEach(box=>{
+
+
+gsap.fromTo(box,
+
+{
+    y:40,
+    autoAlpha:0
+},
+
+{
+    y:0,
+    autoAlpha:1,
+    duration:.7,
 
     scrollTrigger:{
-        trigger:".problems",
-        start:"top 80%"
-    },
+        trigger:box,
+        start:"top 90%"
+    }
 
-    y:40,
-    autoAlpha:0,
-    stagger:0.12,
-    duration:0.7,
-    ease:"power3.out"
+});
+
 
 });
 
 
 
-// ===============================
-// WHAT WE DO CARDS
-// ===============================
 
-gsap.from(`
-.service-card,
-.service-card-wide
-`,{
+
+// =================================
+// WHAT WE DO
+// =================================
+
+
+fadeLeft(`
+.dotxt,
+.wedtxt
+`);
+
+
+fadeRight(".wertxt");
+
+
+
+
+// SERVICE CARDS
+// =================================
+
+
+gsap.utils.toArray(".service-card, .service-card-wide")
+.forEach(card=>{
+
+
+gsap.fromTo(card,
+
+{
+    y:50,
+    autoAlpha:0
+},
+
+{
+    y:0,
+    autoAlpha:1,
+    duration:.8,
 
     scrollTrigger:{
-        trigger:".we-do",
-        start:"top 80%"
-    },
+        trigger:card,
+        start:"top 90%"
+    }
 
-    y:40,
-    autoAlpha:0,
-    stagger:0.15,
-    duration:0.7,
-    ease:"power3.out"
+});
+
 
 });
 
 
 
-// ===============================
+
+// =================================
 // OUTCOMES
-// ===============================
+// =================================
 
 
-gsap.from(".out-box",{
+gsap.fromTo(".out-box",
+
+{
+    scale:.85,
+    autoAlpha:0
+},
+
+{
+    scale:1,
+    autoAlpha:1,
+    duration:.8,
+    stagger:.15,
 
     scrollTrigger:{
         trigger:".outcomes",
-        start:"top 80%"
-    },
-
-    scale:0.9,
-    autoAlpha:0,
-    stagger:0.15,
-    duration:0.7
+        start:"top 85%"
+    }
 
 });
 
 
-fadeSide(".outcomes .col-lg-5:first-child",-30);
 
-fadeSide(".outcomes .col-lg-5:last-child",30);
+fadeLeft(".outcomes .col-lg-5:first-child");
+
+fadeRight(".outcomes .col-lg-5:last-child");
 
 
 
-// ===============================
-// TEXT STRIP
-// ===============================
 
-gsap.from(".work-strip-text img",{
+// =================================
+// TYPO IMAGE
+// =================================
+
+
+gsap.fromTo(".work-strip-text img",
+
+{
+    scale:.8,
+    autoAlpha:0
+},
+
+{
+    scale:1,
+    autoAlpha:1,
+    duration:1,
 
     scrollTrigger:{
         trigger:".typo",
-        start:"top 80%"
-    },
-
-    scale:0.8,
-    autoAlpha:0,
-    duration:1
+        start:"top 85%"
+    }
 
 });
 
 
 
-// ===============================
+
+// =================================
 // WHY APEX
-// ===============================
+// =================================
+
 
 fadeUp(".why-content");
 
 
 
-// ===============================
+
+// =================================
 // FOOTER
-// ===============================
+// =================================
+
 
 fadeUp(".footer-top .container");
 
 
 
-// ===============================
+
+// =================================
 // BUTTON HOVER
-// ===============================
+// =================================
 
 
 document.querySelectorAll(".submitbtn,.cta-button")
-.forEach(btn=>{
+.forEach(button=>{
 
 
-btn.addEventListener("mouseenter",()=>{
+button.addEventListener("mouseenter",()=>{
 
-    gsap.to(btn,{
-        scale:1.05,
-        duration:0.25
-    });
+gsap.to(button,{
+    scale:1.05,
+    duration:.25
+});
 
 });
 
 
-btn.addEventListener("mouseleave",()=>{
+button.addEventListener("mouseleave",()=>{
 
-    gsap.to(btn,{
-        scale:1,
-        duration:0.25
-    });
+gsap.to(button,{
+    scale:1,
+    duration:.25
+});
 
 });
 
