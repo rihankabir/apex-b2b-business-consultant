@@ -39,3 +39,7 @@ goTop.addEventListener("click", () => {
     duration: 1000,
     once: true
   });
+  //preloader
+  $(window).on("load", function () {
+    $("#preloader").delay(300).fadeOut(500);
+});
