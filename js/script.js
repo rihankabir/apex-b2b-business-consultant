@@ -34,17 +34,8 @@ goTop.addEventListener("click", () => {
     });
 });
 
-//AOS ANIMATION INI
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
+
   //preloader
   $(window).on("load", function () {
     $("#preloader").delay(300).fadeOut(500);
-});
-document.querySelectorAll("*").forEach(el => {
-    if (el.scrollWidth > document.documentElement.clientWidth) {
-        console.log(el);
-    }
 });
