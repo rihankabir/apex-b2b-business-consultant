@@ -551,3 +551,7 @@ modal.classList.remove("active");
 
 
 });
+
+$("#ctaForm input, #ctaForm textarea").on("keyup blur", function () {
+    $(this).next(".error").remove();
+});
