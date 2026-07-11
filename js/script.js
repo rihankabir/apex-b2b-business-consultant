@@ -555,3 +555,79 @@ modal.classList.remove("active");
 $("#ctaForm input, #ctaForm textarea").on("keyup blur", function () {
     $(this).next(".error").remove();
 });
+$("#ctaForm").submit(function (e) {
+
+    e.preventDefault();
+
+    let isValid = true;
+
+    // Remove old errors
+    $(".error").remove();
+
+    // Full Name
+    let name = $("#fullName").val().trim();
+
+    if (name === "") {
+        $("#fullName").after('<small class="error">Full name is required.</small>');
+        isValid = false;
+    }
+    else if (name.length < 3) {
+        $("#fullName").after('<small class="error">Minimum 3 characters.</small>');
+        isValid = false;
+    }
+
+    // Email
+    let email = $("#email").val().trim();
+
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+        $("#email").after('<small class="error">Email is required.</small>');
+        isValid = false;
+    }
+    else if (!emailPattern.test(email)) {
+        $("#email").after('<small class="error">Enter a valid email.</small>');
+        isValid = false;
+    }
+
+    // Website (optional)
+    let website = $("#website").val().trim();
+
+    if (website !== "") {
+
+        let websitePattern = /^(https?:\/\/)?([\w\-])+\.([a-z]{2,6})(\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?$/i;
+
+        if (!websitePattern.test(website)) {
+
+            $("#website").after('<small class="error">Enter a valid website.</small>');
+
+            isValid = false;
+        }
+    }
+
+    // Message
+    let message = $("#message").val().trim();
+
+    if (message === "") {
+
+        $("#message").after('<small class="error">Message is required.</small>');
+
+        isValid = false;
+    }
+    else if (message.length < 15) {
+
+        $("#message").after('<small class="error">Minimum 15 characters.</small>');
+
+        isValid = false;
+    }
+
+    // Success
+    if (isValid) {
+
+        alert("Form submitted successfully!");
+
+        this.reset();
+
+    }
+
+});
