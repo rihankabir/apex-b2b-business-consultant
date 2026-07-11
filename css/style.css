@@ -1301,6 +1301,13 @@ transition:.3s;
 transform:translateY(-3px);
 
 }
+.error{
+    display:block;
+    color:#ff4d4d;
+    font-size:14px;
+    margin-top:6px;
+    font-weight:500;
+}
 
 
 
